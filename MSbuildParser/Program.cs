@@ -28,6 +28,7 @@ namespace MSbuildParser
       }
 
       return;
+
       var buildEventsList = GetBuildEvents();
       var root = new TreeNode<string>(buildEventsList[0].WhoBuilding);
       TreeNode<string> previous = null;
