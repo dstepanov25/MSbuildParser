@@ -113,7 +113,6 @@ namespace MSbuildParser
 
     #endregion
 
-
     #region iterating
 
     IEnumerator IEnumerable.GetEnumerator()
@@ -125,10 +124,8 @@ namespace MSbuildParser
     {
       yield return this;
       foreach (var directChild in this.Children)
-      {
         foreach (var anyChild in directChild)
           yield return anyChild;
-      }
     }
 
     #endregion
